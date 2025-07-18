@@ -12,16 +12,3 @@ You're a machine learning engineer at a fintech startup. Your team has built a f
 ✅ Monitor the system and scale it in production
 
 This project demonstrates a modern MLOps workflow, from model training to real-time serving and streaming.
-
-📁 Project Structure
-
-Fraud-detection-api/
-│
-├── app/                 # FastAPI application code
-├── kafka/               # Kafka producer/consumer scripts
-├── models/              # Serialized ML model (.pkl)
-├── notebooks/           # Data exploration & training notebooks
-│
-├── Dockerfile           # Docker container definition
-├── requirements.txt     # Python dependencies
-├── README.md            # Project documentation
