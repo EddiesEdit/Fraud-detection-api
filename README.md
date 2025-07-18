@@ -5,6 +5,7 @@ An end-to-end machine learning deployment project that exposes a fraud detection
 📌 Project Overview
 You're a machine learning engineer at a fintech startup. Your team has built a fraud detection model and needs to:
 
+
 ✅ Serve it through a REST API (FastAPI)
 ✅ Containerize it for scalability (Docker)
 ✅ Stream real-time transaction data (Kafka)
