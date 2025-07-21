@@ -1,15 +1,53 @@
-🚀 Fraud Detection API with Real-Time Streaming
+# 🚨 Real-Time Fraud Detection API using Kafka & Machine Learning
 
-An end-to-end machine learning deployment project that exposes a fraud detection model via a FastAPI REST API, containerizes the service using Docker, and integrates real-time streaming using Apache Kafka.
+This project demonstrates a **real-time fraud detection system** using machine learning and **Kafka** for data streaming. It's designed to simulate a financial transaction pipeline, detecting potential credit card fraud on the fly.
 
-📌 Project Overview
-You're a machine learning engineer at a fintech startup. Your team has built a fraud detection model and needs to:
+## 📦 Project Structure
+
+Fraud_dectection_project/
+│
+├── app/ # (Optional) Backend or API endpoints
+├── kafka/
+│ ├── producer.py # Simulates streaming transaction data into Kafka
+│ └── consumer.py # Consumes the data and makes predictions
+│
+├── models/ # Trained machine learning model (if serialized)
+├── notebooks/
+│ └── dataset/
+│ └── creditcard.csv # (Large file, excluded from GitHub)
+├── Dockerfile # Docker configuration (optional)
+├── docker-compose.yml # Kafka & Zookeeper setup
+├── requirements.txt # Python dependencies
+└── README.md 
 
 
-✅ Serve it through a REST API (FastAPI)
-✅ Containerize it for scalability (Docker)
-✅ Stream real-time transaction data (Kafka)
-✅ Make live fraud predictions and return results
-✅ Monitor the system and scale it in production
+---
 
-This project demonstrates a modern MLOps workflow, from model training to real-time serving and streaming.
+## 🚀 Key Features
+
+- 💡 **Streamed Data Simulation** using Kafka producers
+- 🧠 **Machine Learning Model** (e.g., Logistic Regression / RandomForest) for fraud detection
+- ⚙️ **Kafka Consumer** that performs real-time predictions
+- 📊 Cleaned and preprocessed **credit card dataset**
+- 🐳 Dockerized setup (optional)
+
+---
+
+## 📊 Dataset
+
+We used the **[Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)**. It contains transactions made by European cardholders in September 2013.
+
+> ❗ The dataset is not included in this repo due to GitHub's 100MB limit. You can download it from Kaggle and place it in:
+>
+> `notebooks/dataset/creditcard.csv`
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/EddiesEdit/Fraud-detection-api.git
+cd Fraud-detection-api
+
