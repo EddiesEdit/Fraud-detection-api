@@ -5,20 +5,19 @@ This project demonstrates a **real-time fraud detection system** using machine l
 ## 📦 Project Structure
 
 Fraud_dectection_project/
-│
-├── app/ # (Optional) Backend or API endpoints
+
+├── app/                     # (Optional) Backend or API endpoints (e.g., Flask/FastAPI)
 ├── kafka/
-│ ├── producer.py # Simulates streaming transaction data into Kafka
-│ └── consumer.py # Consumes the data and makes predictions
-│
-├── models/ # Trained machine learning model (if serialized)
+│   ├── producer.py          # Simulates streaming transaction data into Kafka
+│   └── consumer.py          # Consumes streamed data and performs fraud predictions
+├── models/                  # Trained machine learning model files (e.g., .pkl, .joblib)
 ├── notebooks/
-│ └── dataset/
-│ └── creditcard.csv # (Large file, excluded from GitHub)
-├── Dockerfile # Docker configuration (optional)
-├── docker-compose.yml # Kafka & Zookeeper setup
-├── requirements.txt # Python dependencies
-└── README.md 
+│   └── dataset/
+│       └── creditcard.csv   # Large CSV file (excluded from GitHub via .gitignore)
+├── Dockerfile               # Docker config for app containerization (optional)
+├── docker-compose.yml       # Sets up Kafka, Zookeeper, and app services
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation (you're reading it!)
 
 
 ---
